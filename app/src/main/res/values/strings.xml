@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">تاکسی سرویس</string>
+    <string name="contecxt">MainActivity.this</string>
+    <string name="username">نام کاربری</string>
+    <string name="line">-----</string>
+    <string name="send">ارسال</string>
+    <string name="cncl">انصراف</string>
+    <string name="waiting">لطفا صبر کنید...</string>
+    <string name="Prefrence">test.com.test</string>
+    <string name="Token">token</string>
+
+
+
+</resources>

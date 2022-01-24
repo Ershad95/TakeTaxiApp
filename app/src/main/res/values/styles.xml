@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">#fff</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Alert">
+        <item name="android:windowEnterAnimation">@anim/rotate_in</item>
+        <item name="android:windowExitAnimation">@anim/rotate_out</item>
+    </style>
+
+    <style name="Save_Alert">
+        <item name="android:windowEnterAnimation">@anim/left</item>
+        <item name="android:windowExitAnimation">@anim/right</item>
+    </style>
+
+
+    <style name="operator" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/Operator_colorPrimary</item>
+        <item name="colorPrimaryDark">#ff4d00</item>
+        <item name="android:textColor">#fff</item>
+        <item name="colorAccent">@color/Operator_colorAccent</item>
+    </style>
+
+
+
+
+    <style name="ProgressDialog" >
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+
+
+</resources>

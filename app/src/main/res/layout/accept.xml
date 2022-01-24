@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/er"
+    android:padding="20dp"
+    android:id="@+id/Group"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="این سرویس به نام  شما ثبت شد"
+        android:textColor="#fff"
+        android:id="@+id/txtMsg"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:src="@drawable/accept"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

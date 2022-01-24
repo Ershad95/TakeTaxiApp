@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:background="@drawable/operator_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/operator"
+    android:layout_width="match_parent"
+    android:theme="@style/operator"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+   >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/refresh"
+                android:id="@+id/imgUpdate"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="44dp"
+                android:textAlignment="center"
+                android:text="بروز رسانی"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/add"
+                android:id="@+id/imgOperator"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="44dp"
+                android:textAlignment="center"
+                android:text="اپراتور جدید"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/edit"
+                android:id="@+id/imgInfo"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="49dp"
+                android:textAlignment="center"
+                android:text="ویرایش اطلاعات"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:textAlignment="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imgMessageBox"
+                android:src="@drawable/message_box"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="49dp"
+                android:text="تایید نشده ها"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:textAlignment="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/money"
+                android:id="@+id/imgMoney"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="49dp"
+                android:text="تعرفه ها"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:textAlignment="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/logout"
+                android:id="@+id/imgExit"
+                />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="49dp"
+                android:text="خروج"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="end"
+                        android:layout_width="40dp"
+                        android:src="@drawable/user"
+                        android:layout_height="35dp"
+                        android:id="@+id/imageView24" />
+
+                    <EditText
+                        android:id="@+id/edtPassengerName"
+                        android:background="@drawable/txt_operator"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:hint="نام مسافر را وارد کنید"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+
+                    <ImageView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="end"
+                        android:layout_width="40dp"
+                        android:src="@drawable/mobile"
+                        android:layout_height="35dp" />
+                    <EditText
+                        android:id="@+id/edtPassengerTel"
+                        android:background="@drawable/txt_operator"
+                        android:textColor="#fff"
+                        android:inputType="phone"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:hint="شماره تلفن مسافر را وارد کنید"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="end"
+                        android:layout_width="40dp"
+                        android:src="@drawable/map_addr"
+                        android:layout_height="35dp" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/edtPassengerAddress"
+                        android:padding="10dp"
+                        android:background="@drawable/txt_operator"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:hint="آدرس مسافر را وارد کنید"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+                    <EditText
+                        android:inputType="textLongMessage"
+                        android:id="@+id/edtDestination"
+                        android:padding="10dp"
+                        android:background="@drawable/txt_operator"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:hint="آدرس مقصد را وارد کنید"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="60dp"
+                        app:backgroundTint="#ff0000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/send"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="left"
+                        android:id="@+id/floatingActionButton"
+                        app:elevation="11dp"
+                        app:rippleColor="#fff700"
+                        android:layout_weight="0.15" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/recylerview"
+                        android:layout_height="match_parent">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>
+    </ScrollView>
+

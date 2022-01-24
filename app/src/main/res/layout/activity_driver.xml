@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/imgLogOut"
+                android:layout_width="40dp"
+                android:src="@drawable/logout"
+                android:layout_height="50dp" />
+            <TextView
+                android:paddingTop="4dp"
+                android:layout_width="match_parent"
+                android:text="خروج"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/message_box"
+                    android:layout_width="50dp" />
+
+                <TextView
+                    android:id="@+id/txtBadge"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:text="10"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/badge"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:textAlignment="center"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:text="پیام ها"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgStatus"
+                android:layout_height="50dp"
+                android:layout_width="40dp" />
+            <TextView
+                android:padding="4dp"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:text="وضعیت"
+                android:textSize="15sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:textDirection="rtl"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWelcome"
+            android:layout_weight="1" />
+        <ImageView
+
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/diver"
+            android:layout_width="40dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow"></View>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:text="تغییر وضعیت فعلی : "
+        android:layout_height="wrap_content" />
+    <RadioGroup
+
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioReady"
+            android:paddingRight="10dp"
+            android:button="@drawable/checkbox_auth_select"
+            android:layout_marginRight="50dp"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layoutDirection="rtl"
+            android:layout_width="wrap_content"
+            android:text="آماده"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioBusy"
+            android:paddingRight="10dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layoutDirection="rtl"
+            android:button="@drawable/checkbox_auth_select"
+            android:layout_width="wrap_content"
+            android:text="مشغول"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shadow"></View>
+    </FrameLayout>
+
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layoutDirection="rtl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="end"
+                            android:layout_width="30dp"
+                            android:src="@drawable/user"
+                            android:layout_height="30dp"
+                            />
+                        <TextView
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="نام و نام خانوادگی"
+                            android:gravity="center"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:textColorHint="#fff"
+                        android:id="@+id/edtDriverName"
+                        android:background="@drawable/main_txt"
+                        android:textColor="#fff"
+                        android:layout_width="match_parent"
+                        android:hint="نام راننده"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColorHint="#fff"
+                        android:id="@+id/edtDriverLname"
+                        android:background="@drawable/main_txt"
+                        android:textColor="#fff"
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:hint="نام خانوادگی راننده"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layoutDirection="rtl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="end"
+                            android:layout_width="25dp"
+                            android:src="@drawable/key"
+                            android:layout_height="30dp"
+                            />
+                        <TextView
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="رمز عبور و نام کاریری"
+                            android:gravity="center"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:textColorHint="#fff"
+                        android:inputType="textLongMessage"
+                        android:id="@+id/edtDriverEmail"
+                        android:padding="10dp"
+                        android:background="@drawable/main_txt"
+                        android:textColor="#fff"
+                        android:layout_width="match_parent"
+                        android:hint="نام کاربری راننده"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="textLongMessage"
+                        android:id="@+id/edtDriverPass"
+                        android:padding="10dp"
+                        android:background="@drawable/main_txt"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:hint="رمز عبور راننده"
+                        android:gravity="center"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/recylerview"
+                        android:layout_height="match_parent">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
+</ScrollView>

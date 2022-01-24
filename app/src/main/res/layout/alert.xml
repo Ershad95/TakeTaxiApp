@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/operator_back"
+    >
+
+
+    <ImageView
+        app:srcCompat="@drawable/d"
+        android:layout_gravity="center"
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff"
+            android:layout_weight="0.79"
+            android:gravity="center"
+            android:text="---------------------"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="نام"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="---------------------"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLname" />
+
+        <TextView
+            android:layout_weight="1"
+            android:text="نام خانوادگی"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="0.92"
+            android:gravity="center"
+            android:text="---------------------"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUsername" />
+
+        <TextView
+            android:layout_weight="1"
+            android:text="نام کاربری"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="0.90"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="---------------------"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPass" />
+
+        <TextView
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="رمز عبور"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" />
+    </LinearLayout>
+
+    <LinearLayout
+       android:weightSum="2"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/accept"
+                android:id="@+id/btn"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="بستن دیالوگ"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/show_history"
+                android:id="@+id/btn_details"
+                android:layout_height="70dp" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:text="تاریخچه پیام ها"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

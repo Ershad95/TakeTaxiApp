@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ff8000"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#ff4902"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="17dp"
+            android:text="هشدار"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/q"
+            android:id="@+id/imageView25"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+
+        </View>
+    </FrameLayout>
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:text="آیا تمایل به ارسال پیام را دارید؟؟؟"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/sy"
+            android:text="دست نگه دار !!!"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnSentToDriver"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:src="@drawable/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnCancel"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

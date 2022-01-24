@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="test.com.test.Auth">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/lck"
+            android:id="@+id/imageView6" />
+    </LinearLayout>
+
+    <TextView
+
+            android:textColor="#fff"
+            android:text="نام کاربری"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUser"
+        android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:hint="نام کاربری را وارد کنید"
+        android:padding="10px"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/txt_back"
+        android:layout_width="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edtUser"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:layout_below="@+id/txtUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:textColor="#fff"
+        android:text="رمز عبور"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPass"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/edtUser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:hint="رمزعبور را وارد کنید"
+        android:background="@drawable/txt_back"
+        android:layout_width="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtPass"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:password="true"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtPass"
+        android:layout_alignLeft="@+id/edtUser"
+        android:layout_alignStart="@+id/edtUser"
+        android:layout_alignRight="@+id/edtUser"
+        android:layout_alignEnd="@+id/edtUser" />
+
+    <ImageView
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/user"
+        android:id="@+id/imageView13"
+        android:layout_width="50dp"
+        android:layout_above="@+id/edtUser"
+        android:layout_alignRight="@+id/edtUser"
+        android:layout_alignEnd="@+id/edtUser"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtPass">
+
+        <RadioButton
+            android:textSize="16sp"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:button="@drawable/checkbox_auth_select"
+            android:layout_marginBottom="10dp"
+            android:text="ورود به عنوان اپراتور"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioOperator" />
+
+        <RadioButton
+            android:textSize="16sp"
+            android:paddingRight="10dp"
+            android:button="@drawable/checkbox_auth_select"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:text="ورود به عنوان راننده"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioDriver"
+            android:layout_above="@+id/radioOperator"
+            android:layout_centerHorizontal="true" />
+    </RadioGroup>
+
+    <RelativeLayout
+            android:background="@drawable/footer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp">
+
+            <Button
+                android:textColor="#fff"
+                android:text="ارسال"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="26dp"
+                android:layout_marginEnd="26dp"
+                android:id="@+id/btnSend"
+                android:background="@drawable/btn_back"
+                android:layout_alignBaseline="@+id/btnCancel"
+                android:layout_alignBottom="@+id/btnCancel"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:textColor="#fff"
+                android:text="ثبت راننده جدید"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:id="@+id/btnCancel"
+                android:textSize="18sp"
+                android:background="@drawable/btn_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="normal|bold" />
+        </RelativeLayout>
+
+    <ImageView
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/key"
+        android:id="@+id/imageView18"
+        android:layout_width="30dp"
+        android:layout_above="@+id/edtPass"
+        android:layout_alignRight="@+id/imageView13"
+        android:layout_alignEnd="@+id/imageView13" />
+
+
+</RelativeLayout>

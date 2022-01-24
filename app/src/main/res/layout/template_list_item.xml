@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="#ffb300">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/diver"
+            android:id="@+id/imageView" />
+
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:button="@drawable/checkbox_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkbox"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Download"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttxttxt"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <TextView
+            android:textColor="#fff"
+            android:text="Download"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttxt"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/txttxttxt"
+            android:layout_alignStart="@+id/txttxttxt" />
+
+        <TextView
+            android:textColor="#fff"
+            android:text="فامیلی : "
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textView19"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView21"
+            android:layout_alignEnd="@+id/textView21" />
+
+        <TextView
+            android:textColor="#fff"
+            android:text="نام : "
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textView21"
+            android:layout_above="@+id/textView19"
+            android:layout_toLeftOf="@+id/checkbox"
+            android:layout_toStartOf="@+id/checkbox"
+            android:layout_marginRight="28dp"
+            android:layout_marginEnd="28dp" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

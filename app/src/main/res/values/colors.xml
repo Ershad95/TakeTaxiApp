@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#2954ff</color>
+    <color name="colorAccent">#044bff</color>
+    <color name="Errror">#ff2200</color>
+
+    <color name="frag1">#ff3c00</color>
+    <color name="frag2">#f00f00</color>
+    <color name="frag3">#10af13</color>
+    <color name="frag4">#0077ff</color>
+
+    <color name="Operator_colorPrimaryDark">#ff5500</color>
+    <color name="Operator_colorPrimary">#ff5703</color>
+    <color name="Operator_colorAccent">#ffcc01</color>
+</resources>

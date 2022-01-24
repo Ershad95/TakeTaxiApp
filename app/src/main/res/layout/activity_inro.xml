@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_inro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0090ff"
+    tools:context="test.com.test.Inro">
+
+    <android.support.v4.view.ViewPager
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/indicator"
+        android:layout_alignParentTop="true">
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/rootlay"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:onClick="Prev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/left"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:onClick="next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/right"
+            android:id="@+id/imageView2"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_below="@+id/indicator"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/indicator"
+        android:gravity="center"
+        android:layout_height="30dp"
+        app:ci_drawable="@drawable/in"
+        android:layout_above="@+id/rootlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </me.relex.circleindicator.CircleIndicator>
+
+
+</RelativeLayout>
